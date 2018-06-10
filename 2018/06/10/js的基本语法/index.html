@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>js的基本语法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一些常用知识点记录  Array的一些操作 检测是否为数组：Array.isArray(fruits), fruits为要检测的变量。 排序：  1234567var arr = [22,12,3,43,56,47,4];arr.sort(function (m, n) &amp;#123; if (m &amp;lt; n) return -1 else if (m &amp;gt; n) return 1 else">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js的基本语法">
+<meta property="og:url" content="http://yoursite.com/2018/06/10/js的基本语法/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一些常用知识点记录  Array的一些操作 检测是否为数组：Array.isArray(fruits), fruits为要检测的变量。 排序：  1234567var arr = [22,12,3,43,56,47,4];arr.sort(function (m, n) &amp;#123; if (m &amp;lt; n) return -1 else if (m &amp;gt; n) return 1 else">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-10T05:47:50.611Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="js的基本语法">
+<meta name="twitter:description" content="一些常用知识点记录  Array的一些操作 检测是否为数组：Array.isArray(fruits), fruits为要检测的变量。 排序：  1234567var arr = [22,12,3,43,56,47,4];arr.sort(function (m, n) &amp;#123; if (m &amp;lt; n) return -1 else if (m &amp;gt; n) return 1 else">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-js的基本语法" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-js的基本语法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/10/js的基本语法/" class="article-date">
   <time datetime="2018-06-10T05:08:57.000Z" itemprop="datePublished">2018-06-10</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/js的基本语法/">js的基本语法</a>
+    <h1 class="article-title" itemprop="name">
+      js的基本语法
     </h1>
   
 
@@ -135,144 +137,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-工作问题记录" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/10/工作问题记录/" class="article-date">
-  <time datetime="2018-06-10T04:48:32.000Z" itemprop="datePublished">2018-06-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/工作问题记录/">工作问题记录</a>
-    </h1>
+    <a href="/2018/06/10/工作问题记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">工作问题记录</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="播放音乐"><a href="#播放音乐" class="headerlink" title="播放音乐"></a>播放音乐</h3><p>1、背景音乐。使用<code>cc.audioEngine</code>，1.8.2有一个<code>paly</code>、<code>pause</code>、<code>resume</code>接口。</p>
-<blockquote>
-<p>现在的新本版针对微信小游戏对音频播放进行了优化，提供了<code>playMusic</code>、<code>pauseMusic</code>、<code>resumeMusic</code>接口。</p>
-</blockquote>
-<p>2、播放音效。使用<code>cc.AudioSource</code>在编辑器中预加载，然后调用cc.AudioSource的<code>play</code>接口</p>
-<blockquote>
-<p>cc.AudioClip配合cc.audioEngine的方式播放，每次需要加载，播完，引擎会给卸载，播放音效频繁的话耗时严重。（版本1.8.2）</p>
-</blockquote>
-<h3 id="label的string属性"><a href="#label的string属性" class="headerlink" title="label的string属性"></a>label的string属性</h3><p>频繁的修改label的string属性也是一个耗时操作，两种解决方法</p>
-<ol>
-<li>使用艺术字标签</li>
-<li>label 的 overflow 改成 clamp，不过这个需要预先设定好lable的大小，不然字数多，会截断<blockquote>
-<p>第二种方法有明显改善 （版本1.8.2）</p>
-</blockquote>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/10/工作问题记录/" data-id="cji8eqkag000382wa0jhuaqiu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/10/test/" class="article-date">
-  <time datetime="2018-06-10T04:45:00.000Z" itemprop="datePublished">2018-06-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/10/test/" data-id="cji8eqkae000282wa4wtaghn7" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/10/hello-world/" class="article-date">
-  <time datetime="2018-06-10T04:24:48.095Z" itemprop="datePublished">2018-06-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/10/hello-world/" data-id="cji8eqka8000082walgc6zpq2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
