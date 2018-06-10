@@ -62,6 +62,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-工作问题记录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/10/工作问题记录/" class="article-date">
+  <time datetime="2018-06-10T04:48:32.000Z" itemprop="datePublished">2018-06-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/10/工作问题记录/">工作问题记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>初次接触一些问题记录</p>
+</blockquote>
+<p>#####播放音乐<br>1、背景音乐。使用<code>cc.audioEngine</code>，1.8.2有一个<code>paly</code>、<code>pause</code>、<code>resume</code>接口。</p>
+<blockquote>
+<p>现在的新本版针对微信小游戏对音频播放进行了优化，提供了<code>playMusic</code>、<code>pauseMusic</code>、<code>resumeMusic</code>接口。</p>
+</blockquote>
+<p>2、播放音效。使用<code>cc.AudioSource</code>在编辑器中预加载，然后调用cc.AudioSource的<code>play</code>接口</p>
+<blockquote>
+<p>cc.AudioClip配合cc.audioEngine的方式播放，每次需要加载，播完，引擎会给卸载，播放音效频繁的话耗时严重。（版本1.8.2）</p>
+</blockquote>
+<p>#####label的string属性<br>频繁的修改label的string属性也是一个耗时操作，两种解决方法</p>
+<ol>
+<li>使用艺术字标签</li>
+<li>label 的 overflow 改成 clamp，不过这个需要预先设定好lable的大小，不然字数多，会截断<blockquote>
+<p>第二种方法有明显改善 （版本1.8.2）</p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/10/工作问题记录/" data-id="cji8ctnqh0000vvwa6lv8lrl3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/10/test/" class="article-date">
@@ -88,7 +143,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/10/test/" data-id="cji8chtmg0001uowaee2cd92e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/10/test/" data-id="cji8ctnqo0002vvwad5x2apu0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/10/hello-world/" data-id="cji8chtmc0000uowau4srt43x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/10/hello-world/" data-id="cji8ctnql0001vvwa47wtz4v6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -172,6 +227,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/06/10/工作问题记录/">工作问题记录</a>
+          </li>
         
           <li>
             <a href="/2018/06/10/test/">test</a>
